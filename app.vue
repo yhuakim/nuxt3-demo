@@ -18,11 +18,8 @@ const route = useRoute()
                 <NuxtLink to="/parent" class="n-link-base">
                     Parent
                 </NuxtLink>
-                <NuxtLink to="/parent/child1" class="n-link-base">
-                    Parent (child1)
-                </NuxtLink>
-                <NuxtLink to="/parent/child2" class="n-link-base">
-                    Parent (child2)
+                <NuxtLink to="/parent/child" class="n-link-base">
+                    Parent (child)
                 </NuxtLink>
                 <button class="n-link-base" @click="$router.push(`/dynamic-${(Math.random() * 100).toFixed()}`)">
                     dynamic page
